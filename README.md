@@ -114,8 +114,9 @@ server.listen(PORT, () => {
 1. **Clone this repository.**
 
     ```bash
-    git clone https://github.com/your-username/test.git
-    cd test
+    git clone https://github.com/your-username/basic_client_server_demo
+.git
+    cd basic_client_server_demo
     ```
 
 2. **Initialize the project (if not already done):**
@@ -142,7 +143,7 @@ server.listen(PORT, () => {
     node server.js
     ```
 
-    This command will start the server at http://localhost:3000/.
+    This command will start the server at http://localhost:3000/. Change it to any port number you feel like using.
 
 5. **Open `index.html` in a web browser.**
 6. **Click the "Send Request to Server" button to see the server's response.**
