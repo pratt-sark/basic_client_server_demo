@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Server Model</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Client-Server Model Example</h1>
+        <button onclick="sendRequest()">Send Request to Server</button>
+        <div id="response"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+        function sendRequest() {
+            var xhr = new XMLHttpRequest();
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+                    var responseDiv = document.getElementById("response");
+
+                    if (xhr.status == 200) {
+                        responseDiv.innerHTML = "Server Response: " + xhr.responseText;
+                    } else {
+                        responseDiv.innerHTML = "Error: " + xhr.status + " - " + xhr.statusText;
+                    }
+                }
+            };
+
+            xhr.open("GET", "/api/data", true);
+            xhr.send();
+        }
+    </script>
+</body>
+</html>
