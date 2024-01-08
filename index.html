@@ -15,25 +15,5 @@
 
     <script src="script.js"></script>
 
-    <script>
-        function sendRequest() {
-            var xhr = new XMLHttpRequest();
-
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState == 4) {
-                    var responseDiv = document.getElementById("response");
-
-                    if (xhr.status == 200) {
-                        responseDiv.innerHTML = "Server Response: " + xhr.responseText;
-                    } else {
-                        responseDiv.innerHTML = "Error: " + xhr.status + " - " + xhr.statusText;
-                    }
-                }
-            };
-
-            xhr.open("GET", "/api/data", true);
-            xhr.send();
-        }
-    </script>
 </body>
 </html>
