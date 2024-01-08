@@ -111,11 +111,42 @@ server.listen(PORT, () => {
 
 ## Usage
 
-1. Clone this repository.
-2. Open `index.html` in a web browser.
-3. Click the "Send Request to Server" button to see the server's response.
+1. **Clone this repository.**
 
-**Note:** Make sure Node.js is installed to run the server script.
+    ```bash
+    git clone https://github.com/your-username/test.git
+    cd test
+    ```
+
+2. **Initialize the project (if not already done):**
+
+    ```bash
+    npm init -y
+    ```
+
+    This command creates a `package.json` file with default settings.
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+    This command installs any necessary dependencies.
+
+4. **Run the server script:**
+
+    Ensure Node.js is installed. If not, you can download it [here](https://nodejs.org/).
+
+    ```bash
+    node server.js
+    ```
+
+    This command will start the server at http://localhost:3000/.
+
+5. **Open `index.html` in a web browser.**
+6. **Click the "Send Request to Server" button to see the server's response.**
+
+**Note:** If you encounter any issues, make sure the server is running before accessing the HTML file.
 
 Feel free to explore and modify the code for learning purposes!
-
