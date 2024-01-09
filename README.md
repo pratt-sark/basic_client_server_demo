@@ -114,7 +114,7 @@ server.listen(PORT, () => {
 1. **Clone this repository.**
 
     ```bash
-    git clone https://github.com/your-username/basic_client_server_demo
+    git clone https://github.com/pratt-sark/basic_client_server_demo
 .git
     cd basic_client_server_demo
     ```
